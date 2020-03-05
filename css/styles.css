@@ -1,0 +1,109 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:300,400,500&display=swap');
+@import url("https://use.typekit.net/nry0dzv.css");
+:root{
+  --main-padding: 20px;
+  --section-padding: 35px;
+  --display-font: 'Heebo', sans-serif;
+  --reading-font: 'IBM Plex Sans', sans-serif;
+  --bg-color: #292939;
+  --font-color: #f2f2e6;
+}
+html {
+  font-size: 16px;
+}
+@media only screen and (min-width: 1000px) {
+  html {
+
+  }
+  .section-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+  .section-description {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  * {
+    box-sizing: border-box;
+    line-height: 30px;
+  }
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px)/680))
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--reading-font);
+    background: var(--bg-color);
+    color: var(--font-color);
+  }
+  section {
+    height: 100%
+  }
+  /*Helpers*/
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .intro {
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-70%);
+    line-height: 22px;
+  }
+  .col {
+    padding: var(--main-padding);
+    position: relative;
+    padding: 20px;
+  }
+  .col-max-1  { flex: 0 0 8.3333%; }
+  .col-max-2  { flex: 0 0 16.666%; }
+  .col-max-3  { flex: 0 0 25.000%; }
+  .col-max-4  { flex: 0 0 33.333%; }
+  .col-max-5  { flex: 0 0 41.666%; }
+  .col-max-6  { flex: 0 0 50.000%; }
+  .col-max-7  { flex: 0 0 58.333%; }
+  .col-max-8  { flex: 0 0 66.666%; }
+  .col-max-9  { flex: 0 0 75.000%; }
+  .col-max-10 { flex: 0 0 83.333%; }
+  .col-max-11 { flex: 0 0 91.666%; }
+  .col-max-12 { flex: 0 0 100.00%; }
+
+  .greeting {
+    margin-bottom: 15px;
+  }
+  .hero-img {
+    background: url("https://images.pexels.com/photos/2832432/pexels-photo-2832432.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") contain;
+    max-height: 100%;
+  }
+  .hero-img img {
+    max-width: 100%;
+  }
+
+  header {
+    display: none;
+    position: fixed;
+  }
+  header .container {
+    padding: 10px;
+  }
+  .section-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+  .section-description {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+}
